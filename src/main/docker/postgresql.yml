@@ -1,0 +1,11 @@
+version: '2'
+services:
+  mgcard-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/MGCARD/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=MGCARD
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
